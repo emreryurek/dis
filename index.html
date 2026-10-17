@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ağız ve diş sağlığı polikliniği. Muayene, diş taşı temizliği, dolgu, kanal tedavisi, implant, ortodonti ve çocuk diş hekimliği. Online randevu alın.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta name="theme-color" content="#0f4c5c">
+<title>Perla | Ağız ve Diş Sağlığı Polikliniği</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="ery-kit.css?v=1">
+<style>
+  :root { --k-panel:#fff; --k-field:#f3f8f8; --k-line:#d9e6e7; --k-text:#14303a; --k-muted:#5d7480; --k-accent:#0f4c5c; --k-on-accent:#fff; --k-radius:18px; --k-pill:12px; --k-font:'Inter',Arial,sans-serif; --k-shadow:0 20px 60px rgba(15,76,92,.22); }
+</style>
+<script src="script.js?v=1" defer></script>
+<script src="site.js?v=1" defer></script>
+<script src="ery-kit.js?v=1" defer></script>
+</head>
+<body>
+
+<!--
+  MÜŞTERİYE TESLİM EDERKEN:
+  1) Klinik adı, telefon (0555 555 55 55 / 905555555555), adres, saatler, harita
+  2) Hekim bilgileri: yalnızca diplomada ve Bakanlık tescilinde olan unvan/sertifikalar
+  3) Form adresi (formsubmit.co/...) ve _next adresi, kvkk.html içeriği (klinik adına)
+  4) Alttaki "örnek çalışma" şeridini (class="ery-demo") sil
+  YÖNETMELİK: fiyat, indirim/kampanya, hasta yorumu, önce-sonra görseli, "en iyi" gibi
+  üstünlük ifadeleri ekleme.
+-->
+
+<header class="header">
+    <a href="index.html" class="logo"><span class="mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 6.5c-2.2-1.8-5.3-2.3-7.6-.9-2.6 1.6-3.3 5-2.4 8.3.7 2.5 1.6 4.9 2.2 7.5.5 2.2.9 5.3 2.9 5.3 2.2 0 1.8-4.5 3.4-6.4.4-.5.9-.7 1.5-.7s1.1.2 1.5.7c1.6 1.9 1.2 6.4 3.4 6.4 2 0 2.4-3.1 2.9-5.3.6-2.6 1.5-5 2.2-7.5.9-3.3.2-6.7-2.4-8.3-2.3-1.4-5.4-.9-7.6.9z"/></svg></span><span class="lt">PERLA<small>AĞIZ VE DİŞ SAĞLIĞI</small></span></a>
+    <nav id="menu">
+        <a href="#tedaviler">Tedaviler</a>
+        <a href="#hekimler">Hekimlerimiz</a>
+        <a href="#klinik">Kliniğimiz</a>
+        <a href="#randevu">Randevu</a>
+        <a href="#sss">SSS</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+    <a href="#randevu" class="btn small head-cta">Randevu Al</a>
+    <button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+<section class="hero" id="anasayfa">
+    <div class="hero-content">
+        <p class="eyebrow">AĞIZ VE DİŞ SAĞLIĞI POLİKLİNİĞİ</p>
+        <h1>Gülüşünüz için <em>planlı</em> ve özenli bakım.</h1>
+        <p class="lead">Muayeneden tedavi planına kadar her adımı hekiminizle birlikte konuşarak ilerliyoruz. Randevunuzu telefondan hemen alın.</p>
+        <div class="actions">
+            <a href="#randevu" class="btn">Online Randevu Al</a>
+            <a href="#tedaviler" class="btn ghost">Tedavileri İncele</a>
+        </div>
+        <div class="hero-status">
+            <p data-k-open>Pzt - Cuma 09:00 - 19:00 · Cmt 09:00 - 15:00</p>
+            <p data-k-next></p>
+        </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+        <div class="ring r1"></div><div class="ring r2"></div>
+        <div class="tooth"><svg viewBox="0 0 32 32"><path d="M16 6.5c-2.2-1.8-5.3-2.3-7.6-.9-2.6 1.6-3.3 5-2.4 8.3.7 2.5 1.6 4.9 2.2 7.5.5 2.2.9 5.3 2.9 5.3 2.2 0 1.8-4.5 3.4-6.4.4-.5.9-.7 1.5-.7s1.1.2 1.5.7c1.6 1.9 1.2 6.4 3.4 6.4 2 0 2.4-3.1 2.9-5.3.6-2.6 1.5-5 2.2-7.5.9-3.3.2-6.7-2.4-8.3-2.3-1.4-5.4-.9-7.6.9z"/></svg></div>
+        <div class="chip c1"><b>Online randevu</b><span>Hekim, gün ve saat seçin</span></div>
+        <div class="chip c2"><b>Steril ortam</b><span>Her hastadan sonra sterilizasyon</span></div>
+    </div>
+</section>
+
+<section class="services" id="tedaviler">
+    <div class="heading">
+        <p class="label">TEDAVİ ALANLARIMIZ</p>
+        <h2>Size uygun tedavi, muayeneyle planlanır.</h2>
+        <p class="sub">Aşağıdaki bilgiler genel bilgilendirme amaçlıdır. Hangi tedavinin size uygun olduğuna muayene sonrası hekiminiz karar verir.</p>
+    </div>
+    <div class="service-grid">
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.3-4.3"/></svg></div><h3>Muayene ve Kontrol</h3><p>Ağız içi muayene, gerekli görüntülemeler ve size özel tedavi planının konuşulması.</p><a class="pick" href="#randevu" data-service="Muayene / Kontrol" data-k-pick="muayene">Randevu al →</a></article>
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20 14 10M14 4l6 6-3 3-6-6z"/></svg></div><h3>Diş Taşı Temizliği</h3><p>Diş yüzeyinde biriken diş taşı ve plakların profesyonel olarak temizlenmesi.</p><a class="pick" href="#randevu" data-service="Diş Taşı Temizliği" data-k-pick="temizlik">Randevu al →</a></article>
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="2.5"/></svg></div><h3>Dolgu</h3><p>Çürük nedeniyle kaybedilen diş dokusunun diş rengindeki malzemelerle onarılması.</p><a class="pick" href="#randevu" data-service="Dolgu" data-k-pick="dolgu">Randevu al →</a></article>
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M8 7l4-4 4 4"/></svg></div><h3>Kanal Tedavisi</h3><p>Diş içindeki iltihaplı dokunun temizlenip kanalların doldurulduğu tedavi.</p><a class="pick" href="#randevu" data-service="Kanal Tedavisi" data-k-pick="kanal">Randevu al →</a></article>
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6l-1 5h-4zM10 8h4l-.5 4h-3zM10.5 12h3v4l-1.5 5-1.5-5z"/></svg></div><h3>İmplant</h3><p>Kaybedilen dişin yerine çene kemiğine yerleştirilen yapay kökle yapılan tedavi.</p><a class="pick" href="#randevu" data-service="İmplant Görüşmesi" data-k-pick="implant">Görüşme randevusu →</a></article>
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h18M6 9v6M10 9v6M14 9v6M18 9v6"/></svg></div><h3>Ortodonti</h3><p>Dişlerin ve çenenin konumunu düzenleyen tedavi. Tel ya da şeffaf plak seçenekleri değerlendirilir.</p><a class="pick" href="#randevu" data-service="Ortodonti Görüşmesi" data-k-pick="orto">Görüşme randevusu →</a></article>
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div><h3>Diş Beyazlatma</h3><p>Diş renginin açılması için hekim kontrolünde yapılan uygulama.</p><a class="pick" href="#randevu" data-service="Diş Beyazlatma Görüşmesi" data-k-pick="beyaz">Görüşme randevusu →</a></article>
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6"/></svg></div><h3>Çocuk Diş Hekimliği</h3><p>Süt ve daimi dişlerin takibi, koruyucu uygulamalar ve çocuğa uygun, sakin bir muayene ortamı.</p><a class="pick" href="#randevu" data-service="Çocuk Muayenesi" data-k-pick="cocuk">Randevu al →</a></article>
+        <article class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 9c4-3 12-3 16 0M6 13c3-2 9-2 12 0M8 17c2-1 6-1 8 0"/></svg></div><h3>Diş Eti Tedavisi</h3><p>Diş eti hastalıklarının teşhisi ve diş etinin sağlığını korumaya yönelik tedaviler.</p><a class="pick" href="#randevu" data-service="Muayene / Kontrol" data-k-pick="muayene">Randevu al →</a></article>
+    </div>
+</section>
+
+<section class="doctors" id="hekimler">
+    <div class="heading">
+        <p class="label">HEKİMLERİMİZ</p>
+        <h2>Tedavinizi birlikte planlıyoruz.</h2>
+    </div>
+    <div class="doc-grid">
+        <article class="doc"><div class="av">EA</div><h3>Dt. Elif Aksoy</h3><p class="role">Diş Hekimi · Mesul Müdür</p><p>Genel diş hekimliği, dolgu, kanal tedavisi ve diş eti tedavileri.</p><a class="pick" href="#randevu" data-k-pick="muayene">Randevu al →</a></article>
+        <article class="doc"><div class="av">CD</div><h3>Dt. Can Demir</h3><p class="role">Ortodonti Uzmanı</p><p>Tel ve şeffaf plak tedavileri, çene ve diş konumu değerlendirmesi.</p><a class="pick" href="#randevu" data-k-pick="orto">Randevu al →</a></article>
+        <article class="doc"><div class="av">ZA</div><h3>Dt. Zeynep Arslan</h3><p class="role">Pedodonti Uzmanı</p><p>Çocuklarda diş takibi, koruyucu uygulamalar ve süt dişi tedavileri.</p><a class="pick" href="#randevu" data-k-pick="cocuk">Randevu al →</a></article>
+    </div>
+</section>
+
+<section class="clinic" id="klinik">
+    <div class="clinic-art" aria-hidden="true">
+        <div class="tile t1"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V7z"/><path d="m9 12 2 2 4-4"/></svg><b>Sterilizasyon</b></div>
+        <div class="tile t2"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><b>Dijital görüntüleme</b></div>
+        <div class="tile t3"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6"/></svg><b>Çocuk dostu</b></div>
+        <div class="tile t4"><svg viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.8"/><path d="M12 7v6h5l2 6M12 13H8M10 10a6 6 0 1 0 6 8"/></svg><b>Engelsiz erişim</b></div>
+    </div>
+    <div>
+        <p class="label">KLİNİĞİMİZ</p>
+        <h2>İlk ziyaretiniz nasıl geçer?</h2>
+        <ol class="flow">
+            <li><b>Muayene</b><span>Hekiminiz ağız içini inceler, gerekirse görüntüleme yapılır.</span></li>
+            <li><b>Bilgilendirme</b><span>Tedavi seçenekleri, süreleri ve ücretleri size açıkça anlatılır.</span></li>
+            <li><b>Planlama</b><span>Onayınızla seans tarihleri birlikte belirlenir, hatırlatma gönderilir.</span></li>
+        </ol>
+    </div>
+</section>
+
+<section class="steps" id="randevu">
+    <div class="heading">
+        <p class="label">ONLINE RANDEVU</p>
+        <h2>Randevunuzu bir dakikada oluşturun.</h2>
+    </div>
+    <p class="kit-lead">Randevu nedeninizi, hekiminizi ve saatinizi seçin. Talebiniz WhatsApp'tan bize ulaşır, onaylayıp size dönüş yaparız.</p>
+    <div data-k-booking></div>
+    <p class="kvkk-note">Lütfen şikâyetiniz veya sağlık durumunuzla ilgili bilgi yazmayın; bunları muayenede hekiminizle konuşabilirsiniz. Kişisel verileriniz yalnızca randevunuzu oluşturmak için kullanılır. <a href="kvkk.html">KVKK Aydınlatma Metni</a></p>
+</section>
+
+<section class="faq" id="sss">
+    <div class="heading">
+        <p class="label">SIK SORULANLAR</p>
+        <h2>Merak ettikleriniz.</h2>
+    </div>
+    <div class="faq-list">
+        <details><summary>Randevuyu nasıl alırım?</summary><p>Sayfadaki online randevu bölümünden randevu nedeninizi, hekiminizi ve boş saati seçebilirsiniz. Dilerseniz telefonla arayabilir ya da WhatsApp'tan yazabilirsiniz.</p></details>
+        <details><summary>İlk muayenede ne yapılır?</summary><p>Hekiminiz ağız içi muayene yapar, gerekirse görüntüleme ister. Ardından tedavi seçenekleri ve planı sizinle birlikte konuşulur.</p></details>
+        <details><summary>Tedavi ücretlerini nasıl öğrenebilirim?</summary><p>Ücretler, muayene sonrası size özel tedavi planıyla birlikte hekiminiz tarafından bildirilir.</p></details>
+        <details><summary>Acil bir durumda ne yapmalıyım?</summary><p>Şiddetli ağrı, yüzde şişlik ya da diş travması durumunda çalışma saatlerinde hemen bizi arayın. Mesai dışında en yakın acil servise başvurun.</p></details>
+        <details><summary>Çocuğumu kaç yaşında getirmeliyim?</summary><p>İlk diş kontrolünün zamanlamasını pedodonti uzmanımızla görüşebilirsiniz. Çocuk muayenesi için online randevu alabilirsiniz.</p></details>
+        <details><summary>Randevumu iptal edebilir miyim?</summary><p>Elbette. Planınız değişirse en az bir gün önceden haber vermeniz yeterli, yeni bir saat ayarlarız.</p></details>
+    </div>
+</section>
+
+<section class="contact" id="iletisim">
+    <div class="heading">
+        <p class="label">İLETİŞİM</p>
+        <h2>Bize ulaşın.</h2>
+    </div>
+    <div class="contact-grid">
+        <div class="info">
+            <div class="item"><span>TELEFON</span><strong><a href="tel:+905555555555">0555 555 55 55</a></strong></div>
+            <div class="item"><span>WHATSAPP</span><strong><a href="https://wa.me/905555555555" target="_blank" rel="noopener">0555 555 55 55</a></strong><br><a href="https://wa.me/905555555555" target="_blank" rel="noopener" class="wa">WhatsApp'tan Yazın</a></div>
+            <div class="item"><span>ADRES</span><strong>Örnek Mah. Örnek Sk. No:1, İstanbul</strong></div>
+            <div class="item"><span>ÇALIŞMA SAATLERİ</span><strong>Pzt - Cuma 09:00 - 19:00<br>Cumartesi 09:00 - 15:00</strong></div>
+        </div>
+
+        <!-- Örnek form: mesajlar ERY Studio'ya düşer. Müşteriye teslimde adresi değiştir. -->
+        <form class="form" action="https://formsubmit.co/iletisim@erystudio.com" method="POST">
+            <input type="hidden" name="_subject" value="Perla Diş ÖRNEK SİTE - Form Denemesi">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://emreryurek.github.io/dis/tesekkurler.html">
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+            <input type="text" name="name" placeholder="Adınız Soyadınız" autocomplete="name" required>
+            <input type="tel" name="phone" placeholder="Telefon Numaranız" autocomplete="tel" required>
+            <select name="service">
+                <option value="">Konu (isteğe bağlı)</option>
+                <option>Randevu</option>
+                <option>Anlaşmalı kurum / sigorta</option>
+                <option>Ulaşım ve adres</option>
+                <option>Diğer</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Mesajınız (lütfen sağlık bilgisi yazmayın)"></textarea>
+            <label class="consent"><input type="checkbox" required> <span><a href="kvkk.html" target="_blank">KVKK Aydınlatma Metni</a>'ni okudum.</span></label>
+            <button type="submit" class="btn">Mesaj Gönder</button>
+        </form>
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps?q=Istanbul%2C%20Turkey&output=embed" title="Perla konum haritası" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+</main>
+
+<footer>
+    <a href="index.html" class="logo"><span class="lt">PERLA</span></a>
+    <p>Ağız ve Diş Sağlığı Polikliniği · Mesul Müdür: Dt. Elif Aksoy</p>
+    <p>Sitedeki bilgiler genel bilgilendirme amaçlıdır, muayene ve hekim görüşünün yerini tutmaz.</p>
+    <p><a href="kvkk.html">KVKK Aydınlatma Metni</a> · © 2026 Perla Ağız ve Diş Sağlığı</p>
+</footer>
+
+<a class="wa-float" href="https://wa.me/905555555555?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile randevu al"><svg viewBox="0 0 32 32" width="28" height="28" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.3L4 29l8-1.9c1.2.6 2.6.9 4 .9 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.8c-1.3 0-2.6-.3-3.7-.9l-.5-.3-4.2 1 1.1-4-.3-.5a9.7 9.7 0 0 1-1.5-5.2C6.9 9.5 11 5.5 16 5.5s9.1 4 9.1 9.4-4.1 9.9-9.1 9.9z"/></svg></a>
+
+<div class="ery-demo">
+    <span>Bu site ERY Studio'nun örnek çalışmasıdır. Sağlık tanıtım yönetmeliği dikkate alınarak hazırlanmıştır.</span>
+    <a href="https://wa.me/905325023600?text=Merhaba%2C%20di%C5%9F%20klini%C4%9Fi%20%C3%B6rne%C4%9Fini%20g%C3%B6rd%C3%BCm%2C%20klini%C4%9Fime%20de%20site%20istiyorum." target="_blank" rel="noopener">Kliniğinize de hazırlayalım</a>
+</div>
+
+</body>
+</html>
